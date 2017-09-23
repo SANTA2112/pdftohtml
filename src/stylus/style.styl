@@ -7,3 +7,58 @@
 
 body
   font-family: "Arial"
+.container
+  max-width: 1232px
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+header
+  width: 100%
+.menu
+  background: #000000
+  padding: 5px
+  &__wrap
+    display: flex
+    align-items: center
+  &__text
+    color: #ffffff
+    font-weight: 600
+    font-size: 12px
+  &__item
+    padding: 0 10px
+    display: flex
+    align-items: center
+    &_advt
+      &:before
+        content: ""
+        background: url(../img/advt.png)
+        width: 13px
+        height: 14px
+        display: inline-block
+        margin-right: 4px
+    &_reg
+      &:before
+        content: ""
+        background: url(../img/reg.png)
+        width: 18px
+        height: 15px
+        display: inline-block
+        margin-right: 4px
+    &_join
+      &:before
+        content: ""
+        background: url(../img/join.png)
+        width: 15px
+        height: 15px
+        display: inline-block
+        margin-right: 4px
+  &__link
+    text-decoration: none
+    color: #b9b9c3
+    font-size: 12px
+    &:hover
+      color: #ffffff
+    &_bor
+      border-bottom: 1px dotted #b9b9c3
+      &:hover
+        border-color: #ffffff
