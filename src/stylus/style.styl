@@ -95,9 +95,10 @@ header
 .content
   width: 100%
   &__main
+    width: 100%
+  &__mainbor
     margin: 24px
     border: 2px solid rgba(0,0,0,0.1)
-    width: 100%
   &__direction
     display: flex
     flex-direction: column
@@ -105,8 +106,6 @@ header
     max-width: 976px
     min-width: 740px
     padding: 15px
-  &__secondary
-    max-width: 250px
   &__linkback
     text-decoration: none
     font-size: 12px
@@ -220,3 +219,55 @@ header
       border-radius: 2px
   &__morestocksday
     margin-left: 4px
+  &__otherstocks
+    max-width: 976px
+    min-width: 740px
+    margin: 40px 0 0 26px
+  &__otherstocksheader
+    margin-bottom: 10px
+  &__otherstockswrap
+    display: flex
+    flex-wrap: wrap
+  &__otherstocksblock
+    border: 1px solid rgba(0,0,0,.1)
+    display: flex
+    flex-direction: column
+    width: 25%
+    margin: 5px
+  &__otherstocksimg
+    width: calc(50%-10px)
+  &__otherstocksdiscription
+    margin: 15px
+  &__otherstockslost
+    color: #ffffff
+    background: #ff7d42
+    padding: 5px 8px
+    font-size: 10px
+    display: inline
+    font-weight: 600
+    border-radius: 2px
+    text-transform: uppercase
+  &__secondary //второй контейнер
+    max-width: 250px
+    padding: 40px 0 0
+    border: 1px solid black
+    background: #e2e2f9
+  &__secondaryline
+    margin: 10px 0
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+  &__secondarywrapper
+    display: flex
+    flex-direction: column
+    overflow: hidden
+  &__secondaryblock
+    margin: 9px
+  &__secondaryheader
+    margin: 10px 0
+    font-weight: 600
+    font-size: 14px
+  &__secondarytext
+    color:#6d6868
+    font-size: 12px
+
+
+
