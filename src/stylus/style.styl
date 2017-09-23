@@ -8,7 +8,6 @@
 body
   font-family: "Arial"
 .container
-  max-width: 1232px
   display: flex
   justify-content: space-between
   margin: 0 auto
@@ -72,15 +71,16 @@ header
     width: 180px
   &__item
     padding: 0 10px
-    border-bottom: 3px solid transparent
-    &:hover
-      border-bottom: 3px solid #ffcc00
   &__link
     text-decoration: none
     color: #fff
+    padding-bottom: 16px
     &:hover
+      padding-bottom: 16px
       color: #ffcc00
+      border-bottom: 3px solid #ffcc00
     &_bor
+      padding: 0
       border-bottom: 1px dotted #ffffff
       &:hover
         border-color: #ffcc00
@@ -88,7 +88,7 @@ header
       color: #ff7d42
       &:before
         content: ""
-        background: url('../img/burn.png')
+        background: url('../img/burn.png') no-repeat
         width: 17px
         height: 23px
         display: inline-block
@@ -99,6 +99,8 @@ header
   &__mainbor
     margin: 24px
     border: 2px solid rgba(0,0,0,0.1)
+    display: flex
+    justify-content: center
   &__direction
     display: flex
     flex-direction: column
@@ -220,24 +222,36 @@ header
   &__morestocksday
     margin-left: 4px
   &__otherstocks
-    max-width: 976px
-    min-width: 740px
-    margin: 40px 0 0 26px
+    margin: 24px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
   &__otherstocksheader
     margin-bottom: 10px
+    font-size: 18px
   &__otherstockswrap
     display: flex
     flex-wrap: wrap
+    max-width: 976px
+    min-width: 740px
   &__otherstocksblock
     border: 1px solid rgba(0,0,0,.1)
     display: flex
     flex-direction: column
-    width: 25%
+    width: calc(33.3% - 10px)
+    &:hover
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      cursor: pointer
     margin: 5px
   &__otherstocksimg
-    width: calc(50%-10px)
+    width: 100%
+    height: 158px
   &__otherstocksdiscription
     margin: 15px
+  &__otherstockstext
+    font-weight: 600
+    margin-bottom: 10px
   &__otherstockslost
     color: #ffffff
     background: #ff7d42
@@ -247,10 +261,12 @@ header
     font-weight: 600
     border-radius: 2px
     text-transform: uppercase
+
   &__secondary //второй контейнер
     max-width: 250px
     padding: 40px 0 0
-    border: 1px solid black
+    border-right: 1px solid black
+    border-left: 1px solid black
     background: #e2e2f9
   &__secondaryline
     margin: 10px 0
