@@ -13,6 +13,14 @@ body
   margin: 0 auto
 header
   width: 100%
+.headermenu
+  transition:all 1s linear
+.fix
+  position: fixed
+  width: 100%
+  transition:all .5s linear
+  top: 0
+  z-index: 900
 .menu
   background: #000000
   padding: 5px
@@ -86,11 +94,6 @@ header
       padding-bottom: 16px
       color: #ffcc00
       border-bottom: 3px solid #ffcc00
-    &_bor
-      padding: 0
-      border-bottom: 1px dotted #ffffff
-      &:hover
-        border-color: #ffcc00
     &_col
       color: #ff7d42
       &:before
@@ -99,6 +102,10 @@ header
         width: 17px
         height: 23px
         display: inline-block
+  &__bor
+    border-bottom: 1px dotted #ffffff
+    &:hover
+      border-color: #ffcc00
 .content
   width: 100%
   &__main
